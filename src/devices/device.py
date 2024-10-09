@@ -39,7 +39,7 @@ class BatteryLevel(Enum):
 
 
 class Units(Enum):
-    CELSIUS = "CELCIUS"
+    CELSIUS = "CELSIUS"
 
 
 class Sensor(ABC):
