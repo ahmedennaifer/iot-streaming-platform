@@ -1,2 +1,2 @@
 
-![Platform Architecture]('images/Diagram.png')
+![Platform Architecture](images/Diagram.png)
