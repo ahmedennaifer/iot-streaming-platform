@@ -1,2 +1,2 @@
 
-![Alt text]('images/Diagram.png')
+![Platform Architecture]('images/Diagram.png')
