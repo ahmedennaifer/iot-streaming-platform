@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "spark-streaming"
+version = "0.1.0"
+description = ""
+authors = ["ahmed <ahmed@opsci.ai>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.14"
+kafka-python = "^2.0.2"
+numpy = "^2.1.2"
+psycopg2 = "^2.9.9"
+confluent-kafka = "^2.5.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
