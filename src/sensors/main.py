@@ -1,4 +1,4 @@
-from sensor_temperature import TemperatureSensor
+from temperature import TemperatureSensor
 
 
 s = TemperatureSensor()
