@@ -1,4 +1,5 @@
-from temperature import TemperatureSensor
+from .temperature import TemperatureSensor, TemperatureThermistorSensor
 
-s = TemperatureSensor()
-print(s)
+while TemperatureSensor._BATTERY_LEVEL > 0:
+    s = TemperatureSensor(TemperatureThermistorSensor())
+    print(s)

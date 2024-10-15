@@ -4,16 +4,16 @@ import numpy as np
 import os
 
 from datetime import datetime
-from random import choice
 
-from enums.units import Units
-from enums.battery import BatteryLevel
-from enums.status import StatusType
-from enums.temperature import TemperatureSensorType
-from sensor import Sensor
+from .enums.units import Units
+from .enums.battery import BatteryLevel
+from .enums.status import StatusType
+from .enums.temperature import TemperatureSensorType
+from .sensor import Sensor
 
 
-# TODO :  add param in sensor class, to define attributes, ie: profile1 : battery level full, etc
+from dataclasses import dataclass
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -25,25 +25,71 @@ console_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 
 
+@dataclass
+class TemperatureBimetallicSensor:
+    type: TemperatureSensorType = TemperatureSensorType.BIMETALLIC
+    unit: Units = Units.CELSIUS
+
+
+@dataclass
+class TemperatureThermometerSensor:
+    type: TemperatureSensorType = TemperatureSensorType.THERMOMETER
+    unit: Units = Units.CELSIUS
+
+
+@dataclass
+class TemperatureThermocoupleSensor:
+    type: TemperatureSensorType = TemperatureSensorType.THERMOCOUPLE
+    unit: Units = Units.VOLT
+
+
+@dataclass
+class TemperatureRTDSSensor:
+    type: TemperatureSensorType = TemperatureSensorType.RTDS
+    unit: Units = Units.OHM
+
+
+@dataclass
+class TemperatureThermistorSensor:
+    type: TemperatureSensorType = TemperatureSensorType.THERMISTOR
+    unit: Units = Units.OHM
+
+
 class TemperatureSensor(Sensor):
-    def __init__(self):
+    _BATTERY_LEVEL = 100
+    _DECREASE_BATTERY_AMOUNT = 0.5
+
+    def __init__(self, temperature_sensor_type):
         super().__init__()
         self.device_id = uuid.uuid1()
         logger.debug(f"Starting device : {self.device_id}, TIME : {datetime.now()}")
-        self.device_type = choice(list(TemperatureSensorType))
+        self.device_type = temperature_sensor_type.type
+        self.unit = temperature_sensor_type.unit
         self.device_model = ""
+        self.battery_status = BatteryLevel.FULL
         self.status = StatusType.ON
-        self.battery_level = BatteryLevel.FULL
         self.location = (np.random.uniform(-90, 90), np.random.uniform(-180, 180))
         self.installation_date = datetime.now()
         self.last_maintenance = datetime.now()
         self.current_reading = self.read_data()
-        self.unit = Units.CELSIUS
         self.log_file = self.log()
         self.group_id = np.random.randint(1, 30)
+
+        self.decrease_battery(self)
         logger.info(
             f"Device {self.device_id} started successfully. Time took to start : {datetime.now() - self.installation_date}"
         )
+
+    @classmethod
+    def decrease_battery(cls, self) -> None:
+        if cls._BATTERY_LEVEL - cls._DECREASE_BATTERY_AMOUNT > 0:
+            cls._BATTERY_LEVEL -= cls._DECREASE_BATTERY_AMOUNT
+        elif cls._BATTERY_LEVEL - cls._DECREASE_BATTERY_AMOUNT <= 0:
+            cls._BATTERY_LEVEL = 0
+            self.battery_status = BatteryLevel.EMPTY
+            logging.critical(
+                f"Sensor: {self.device_id} has NO battery! Charge immediately"
+            )
 
     def __repr__(self) -> str:
         return (
@@ -51,11 +97,9 @@ class TemperatureSensor(Sensor):
             f"DeviceModel: {self.device_model},\n"
             f"DeviceType: {self.device_type},\n"
             f"Status: {self.status},\n"
-            f"installation_date: {self.installation_date},\n"
             f"CurrentReading: {self.current_reading},\n"
-            f"BatteryLevel: {self.battery_level},\n"
+            f"BatteryLevel: {TemperatureSensor._BATTERY_LEVEL},\n"
             f"Location: {self.location},\n"
-            f"LogFile: {self.log_file}"
         )
 
     def send_data(self):
@@ -72,13 +116,19 @@ class TemperatureSensor(Sensor):
 
     def log(self) -> str:
         log_directory = "./logs"
-        if not os.path.exists(log_directory):
-            os.makedirs(log_directory)
         log_file_path = f"{log_directory}/temperature_{self.device_id}_{datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.log"
-        for handler in logger.handlers[:]:
-            if isinstance(handler, logging.FileHandler):
-                logger.removeHandler(handler)
-                handler.close()
+
+        os.makedirs(log_directory, exist_ok=True)
+
+        existing_handlers = [
+            h
+            for h in logger.handlers
+            if isinstance(h, logging.FileHandler) and h.baseFilename == log_file_path
+        ]
+        for handler in existing_handlers:
+            logger.removeHandler(handler)
+            handler.close()
+
         file_handler = logging.FileHandler(log_file_path)
         file_handler.setLevel(logging.DEBUG)
         file_handler.setFormatter(

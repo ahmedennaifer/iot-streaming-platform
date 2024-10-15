@@ -2,8 +2,8 @@ from random import choice
 from datetime import datetime
 from abc import ABC, abstractmethod
 
-from sensors.enums.status import StatusType
-from sensors.enums.battery import BatteryLevel
+from .enums.status import StatusType
+from .enums.battery import BatteryLevel
 
 import logging
 
@@ -24,7 +24,7 @@ class Sensor(ABC):
         self.device_id = None
         self.device_type = None
         self.status = choice(list(StatusType))
-        self.battery_level = choice(list(BatteryLevel))
+        self.battery_level = 100
         self.location = None
         self.installation_date = datetime.now()
         self.last_maintenance = None
