@@ -2,8 +2,8 @@ from random import choice
 from datetime import datetime
 from abc import ABC, abstractmethod
 
-from enums.status import StatusType
-from enums.battery import BatteryLevel
+from sensors.enums.status import StatusType
+from sensors.enums.battery import BatteryLevel
 
 import logging
 
@@ -16,7 +16,6 @@ formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 console_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 
-# TODO : organize classes into  files
 # TODO : check logging issue -> only info gets logged
 
 
@@ -33,10 +32,6 @@ class Sensor(ABC):
         self.current_reading = None
         self.unit = None
         self.log_file = None
-
-    @abstractmethod
-    def start_device(self):
-        pass
 
     @abstractmethod
     def send_data(self) -> bool:

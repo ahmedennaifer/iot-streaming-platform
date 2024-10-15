@@ -13,6 +13,8 @@ from enums.temperature import TemperatureSensorType
 from sensor import Sensor
 
 
+# TODO :  add param in sensor class, to define attributes, ie: profile1 : battery level full, etc
+
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 
@@ -26,8 +28,6 @@ logger.addHandler(console_handler)
 class TemperatureSensor(Sensor):
     def __init__(self):
         super().__init__()
-
-    def start_device(self):
         self.device_id = uuid.uuid1()
         logger.debug(f"Starting device : {self.device_id}, TIME : {datetime.now()}")
         self.device_type = choice(list(TemperatureSensorType))
@@ -40,6 +40,7 @@ class TemperatureSensor(Sensor):
         self.current_reading = self.read_data()
         self.unit = Units.CELSIUS
         self.log_file = self.log()
+        self.group_id = np.random.randint(1, 30)
         logger.info(
             f"Device {self.device_id} started successfully. Time took to start : {datetime.now() - self.installation_date}"
         )
@@ -50,6 +51,8 @@ class TemperatureSensor(Sensor):
             f"DeviceModel: {self.device_model},\n"
             f"DeviceType: {self.device_type},\n"
             f"Status: {self.status},\n"
+            f"installation_date: {self.installation_date},\n"
+            f"CurrentReading: {self.current_reading},\n"
             f"BatteryLevel: {self.battery_level},\n"
             f"Location: {self.location},\n"
             f"LogFile: {self.log_file}"
