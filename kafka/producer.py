@@ -1,9 +1,12 @@
+#!/usr/bin/env python3
+
+
 from confluent_kafka import Producer
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
-conf = {"bootstrap.servers": "localhost:9092"}
+conf = {"bootstrap.servers": "kafka:9092"}
 
 
 def delivery_callback(err, msg):

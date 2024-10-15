@@ -1,10 +1,12 @@
+#!/usr/bin/env python3
+
 from confluent_kafka import Consumer
 import logging
 
 logging.basicConfig(level=logging.DEBUG)
 
 conf = {
-    "bootstrap.servers": "localhost:9092",
+    "bootstrap.servers": "kafka:9092",
     "group.id": "group1",
     "auto.offset.reset": "earliest",
 }
