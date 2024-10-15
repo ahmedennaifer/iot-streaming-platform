@@ -75,13 +75,13 @@ class TemperatureSensor(Sensor):
         self.log_file = self.log()
         self.group_id = np.random.randint(1, 30)
 
-        self.decrease_battery(self)
+        self._decrease_battery(self)
         logger.info(
             f"Device {self.device_id} started successfully. Time took to start : {datetime.now() - self.installation_date}"
         )
 
     @classmethod
-    def decrease_battery(cls, self) -> None:
+    def _decrease_battery(cls, self) -> None:
         if cls._BATTERY_LEVEL - cls._DECREASE_BATTERY_AMOUNT > 0:
             cls._BATTERY_LEVEL -= cls._DECREASE_BATTERY_AMOUNT
         elif cls._BATTERY_LEVEL - cls._DECREASE_BATTERY_AMOUNT <= 0:
