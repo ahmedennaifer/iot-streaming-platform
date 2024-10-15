@@ -1,23 +1,28 @@
-import org.apache.spark.sql.{SparkSession, DataFrame}
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.streaming._
+import org.apache.spark.streaming.StreamingContext._
+import org.apache.spark.SparkContext
 
-object SimpleDataFrameApp {
+object SparkConsummer {
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder()
-      .appName("Simple DataFrame App")
-      .master("local[*]") 
-      .getOrCreate()
 
+    val spark = SparkSession.builder
+      .appName("ScalaConsummer")
+      .master("local[2]")
+      .getOrCreate
 
-    val data = Seq(
-      ("Alice", 28, "Software Engineer"),
-      ("Bob", 34, "Data Scientist"),
-      ("Charlie", 23, "Analyst")
-    )
+    val df = spark.readStream
+      .format("kafka")
+      .option("kafka.bootstrap.servers", "kafka:9092")
+      .option("subscribe", "test")
+      .option("includeHeaders", "true")
+      .load()
 
-    val df: DataFrame = spark.createDataFrame(data).toDF("Name", "Age", "Job")
+    val query = df.writeStream
+      .outputMode("append")
+      .format("console")
+      .start()
 
-    df.show()
-
-    spark.stop()
+    query.awaitTermination()
   }
 }
