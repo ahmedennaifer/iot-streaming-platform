@@ -5,6 +5,9 @@ from abc import ABC, abstractmethod
 from .enums.status import StatusType
 from .enums.battery import BatteryLevel
 
+
+from typing import Any, Optional, Union, Dict
+
 import logging
 
 logger = logging.getLogger(__name__)
@@ -34,11 +37,11 @@ class Sensor(ABC):
         self.log_file = None
 
     @abstractmethod
-    def send_data(self) -> bool:
+    def send_data(self) -> Dict[str, Any]:
         pass
 
     @abstractmethod
-    def read_data(self) -> dict:
+    def read_data(self) -> Union[int, float]:
         pass
 
     @abstractmethod

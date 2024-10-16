@@ -47,6 +47,8 @@ services:
       KAFKA_BROKER: kafka:9092 
     networks:
       - kafka-net  
+    logging:
+      driver: none 
 
 networks:
   kafka-net:

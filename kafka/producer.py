@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 
+from sensors.temperature import TemperatureSensor, TemperatureThermocoupleSensor
+
+
 from confluent_kafka import Producer
 import logging
 
@@ -13,22 +16,24 @@ def delivery_callback(err, msg):
     if err:
         logging.error(f"ERROR: Message failed delivery: {err}")
     else:
-        key = msg.key() if msg.key() is not None else "None"
-        value = msg.value() if msg.value() is not None else "None"
+        key = msg.key().decode("utf-8") if msg.key() else "None"
+        value = msg.value().decode("utf-8") if msg.value() else "None"
         logging.info(
-            f"Produced event to topic {msg.topic()}: key = {str(key):12} value = {str(value):12}"
+            f"Produced event to topic {msg.topic()}: key = {key} value = {value}"
         )
 
 
 producer = Producer(conf)
 topic = "test"
-
-example_message = {"test1": "message1", "test2": "message2", "test3": "message3"}
+s = TemperatureSensor(TemperatureThermocoupleSensor)
 
 
 while True:
-    for k, v in example_message.items():
-        producer.produce(topic, k, v, callback=delivery_callback)
+    data = s.send_data()
+    for k, v in data.items():
+        producer.produce(
+            topic=topic, key=str(k), value=str(v), on_delivery=delivery_callback
+        )
         producer.poll(1)
 
-producer.flush()
+    producer.flush()

@@ -13,7 +13,7 @@ from .sensor import Sensor
 
 
 from dataclasses import dataclass
-
+from typing import Any, Dict, Union
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -102,11 +102,12 @@ class TemperatureSensor(Sensor):
             f"Location: {self.location},\n"
         )
 
-    def send_data(self):
-        return True
+    def send_data(self) -> Dict[str, Any]:
+        self.current_reading = np.random.uniform(1.0, 300)
+        return {"Curent Reading": self.current_reading}
 
-    def read_data(self):
-        return {"test": "test"}
+    def read_data(self) -> Union[int, float]:
+        return np.random.uniform(1.0, 300)
 
     def get_status(self) -> StatusType:
         return StatusType.ON
