@@ -57,7 +57,7 @@ class TemperatureThermistorSensor:
 
 class TemperatureSensor(Sensor):
     _BATTERY_LEVEL = 100
-    _DECREASE_BATTERY_AMOUNT = 0.5
+    _BATTERY_DECREASE_AMOUNT = 0.5
 
     def __init__(self, temperature_sensor_type):
         super().__init__()
