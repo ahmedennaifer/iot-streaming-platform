@@ -62,7 +62,6 @@ class TemperatureSensor(Sensor):
     def __init__(self, temperature_sensor_type):
         super().__init__()
         self.device_id = uuid.uuid1()
-        logger.debug(f"Starting device : {self.device_id}, TIME : {datetime.now()}")
         self.device_type = temperature_sensor_type.type
         self.unit = temperature_sensor_type.unit
         self.device_model = ""
@@ -74,17 +73,13 @@ class TemperatureSensor(Sensor):
         self.current_reading = self.read_data()
         self.log_file = self.log()
         self.group_id = np.random.randint(1, 30)
-
         self._decrease_battery(self)
-        logger.info(
-            f"Device {self.device_id} started successfully. Time took to start : {datetime.now() - self.installation_date}"
-        )
 
     @classmethod
     def _decrease_battery(cls, self) -> None:
-        if cls._BATTERY_LEVEL - cls._DECREASE_BATTERY_AMOUNT > 0:
-            cls._BATTERY_LEVEL -= cls._DECREASE_BATTERY_AMOUNT
-        elif cls._BATTERY_LEVEL - cls._DECREASE_BATTERY_AMOUNT <= 0:
+        if cls._BATTERY_LEVEL - cls._BATTERY_DECREASE_AMOUNT > 0:
+            cls._BATTERY_LEVEL -= cls._BATTERY_DECREASE_AMOUNT
+        elif cls._BATTERY_LEVEL - cls._BATTERY_DECREASE_AMOUNT <= 0:
             cls._BATTERY_LEVEL = 0
             self.battery_status = BatteryLevel.EMPTY
             logging.critical(
