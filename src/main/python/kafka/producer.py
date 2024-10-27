@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 
 
+import json
+import uuid
 from sensors.temperature import TemperatureSensor, TemperatureThermocoupleSensor
+from sensors.enums.temperature import TemperatureSensorType
 
 
 from confluent_kafka import Producer
 import logging
+
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -29,11 +33,11 @@ s = TemperatureSensor(TemperatureThermocoupleSensor)
 
 
 while True:
-    data = s.send_data()
-    for k, v in data.items():
-        producer.produce(
-            topic=topic, key=str(k), value=str(v), on_delivery=delivery_callback
+    readings = s.to_dict()
+    v = json.dumps(readings).encode('utf-8')
+    
+    producer.produce(
+            topic=topic, key=None, value=v, on_delivery=delivery_callback
         )
-        producer.poll(1)
-
+    producer.poll(1)
     producer.flush()
