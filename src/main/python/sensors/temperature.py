@@ -9,11 +9,11 @@ from typing import Any, Dict, Union
 
 import numpy as np
 
-from enums.battery import BatteryLevel
-from enums.status import StatusType
-from enums.temperature import TemperatureSensorType
-from enums.units import Units
-from sensor import Sensor
+from .enums.battery import BatteryLevel
+from .enums.status import StatusType
+from .enums.temperature import TemperatureSensorType
+from .enums.units import Units
+from sensors.sensor import Sensor
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)

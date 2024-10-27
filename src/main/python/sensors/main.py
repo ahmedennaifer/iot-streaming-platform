@@ -1,4 +1,4 @@
-from temperature import TemperatureSensor, TemperatureThermistorSensor, TemperatureBimetallicSensor, TemperatureThermocoupleSensor 
+from .temperature import TemperatureSensor, TemperatureThermistorSensor, TemperatureBimetallicSensor, TemperatureThermocoupleSensor 
 from random import choice
 
 sensor_types = [TemperatureThermocoupleSensor, TemperatureThermistorSensor, TemperatureBimetallicSensor]
