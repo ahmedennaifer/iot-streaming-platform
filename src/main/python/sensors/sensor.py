@@ -2,8 +2,8 @@ from random import choice
 from datetime import datetime
 from abc import ABC, abstractmethod
 
-from .enums.status import StatusType
-from .enums.battery import BatteryLevel
+from enums.status import StatusType
+
 
 
 from typing import Any, Optional, Union, Dict

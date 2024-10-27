@@ -1,19 +1,19 @@
 import logging
-import uuid
-import numpy as np
 import os
 
-from datetime import datetime
 
-from .enums.units import Units
-from .enums.battery import BatteryLevel
-from .enums.status import StatusType
-from .enums.temperature import TemperatureSensorType
-from .sensor import Sensor
-
-
+import uuid
 from dataclasses import dataclass
+from datetime import datetime
 from typing import Any, Dict, Union
+
+import numpy as np
+
+from enums.battery import BatteryLevel
+from enums.status import StatusType
+from enums.temperature import TemperatureSensorType
+from enums.units import Units
+from sensor import Sensor
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -56,6 +56,7 @@ class TemperatureThermistorSensor:
 
 
 class TemperatureSensor(Sensor):
+
     _BATTERY_LEVEL = 100
     _BATTERY_DECREASE_AMOUNT = 0.5
 
@@ -109,6 +110,7 @@ class TemperatureSensor(Sensor):
 
     def reset(self) -> bool:
         return True
+    
 
     def log(self) -> str:
         log_directory = "./logs"
@@ -134,3 +136,9 @@ class TemperatureSensor(Sensor):
         logger.addHandler(file_handler)
 
         return log_file_path
+    
+  
+            
+            
+
+
