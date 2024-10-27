@@ -1,3 +1,4 @@
+import json
 import logging
 import os
 
@@ -97,6 +98,17 @@ class TemperatureSensor(Sensor):
             f"BatteryLevel: {TemperatureSensor._BATTERY_LEVEL},\n"
             f"Location: {self.location},\n"
         )
+    
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "DeviceId": str(self.device_id) if isinstance(self.device_id, uuid.UUID) else self.device_id,
+            "DeviceModel": str(self.device_model),
+            "DeviceType": str(self.device_type),
+            "Status": str(self.status),
+            "CurrentReading": float(self.current_reading),
+            "BatteryLevel": float(TemperatureSensor._BATTERY_LEVEL),
+            "Location": str(self.location),
+        }
 
     def send_data(self) -> Dict[str, Any]:
         self.current_reading = np.random.uniform(1.0, 300)
