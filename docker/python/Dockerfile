@@ -19,3 +19,5 @@ RUN chmod +x /app/src/main/python/kafka/run_both.sh
 EXPOSE 9092 2181
 
 CMD ["bash", "/app/src/main/python/kafka/run_both.sh"]
+
+

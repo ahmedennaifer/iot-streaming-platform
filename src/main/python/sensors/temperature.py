@@ -1,7 +1,5 @@
-import json
 import logging
 import os
-
 
 import uuid
 from dataclasses import dataclass
@@ -15,6 +13,7 @@ from .enums.status import StatusType
 from .enums.temperature import TemperatureSensorType
 from .enums.units import Units
 from sensors.sensor import Sensor
+
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
