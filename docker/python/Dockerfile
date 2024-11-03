@@ -10,14 +10,13 @@ COPY src /app/src
 
 RUN pip install poetry && poetry install
 
-ENV PYTHONPATH="${PYTHONPATH}:/app/src/main/python"
+ENV PYTHONPATH="${PYTHONPATH}:/app/src/main/generator"
 
-RUN chmod +x /app/src/main/python/kafka/consumer.py
-RUN chmod +x /app/src/main/python/kafka/producer.py
-RUN chmod +x /app/src/main/python/kafka/run_both.sh
+RUN chmod +x /app/src/main/generator/producer/producer.py
+RUN chmod +x /app/src/main/generator/producer/run_both.sh
 
 EXPOSE 9092 2181
 
-CMD ["bash", "/app/src/main/python/kafka/run_both.sh"]
+CMD ["bash", "/app/src/main/generator/producer/run_both.sh"]
 
 
