@@ -12,8 +12,6 @@ services:
   kafka:
     image: wurstmeister/kafka
     container_name: kafka
-    ports:
-      - "9092:9092"
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
@@ -21,8 +19,8 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_LISTENERS: PLAINTEXT://0.0.0.0:9092
-    depends_on:
-      - zookeeper
+    ports:
+      - "9092:9092"
     networks:
       - kafka-net
 
@@ -34,7 +32,11 @@ services:
     depends_on:
       - kafka
     environment:
-      KAFKA_BROKER: kafka:9092  
+      KAFKA_BROKER: kafka:9092 
+      POSTGRES_USER: nafra
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: iot
+      DATABASE_URL: "postgresql://nafra:test@db:5432/iot"
     networks:
       - kafka-net  
 
@@ -42,12 +44,40 @@ services:
     build:
       context: .
       dockerfile: docker/scala/Dockerfile
-    container_name: scala-app
+    
     environment:
+      POSTGRES_USER: nafra
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: iot
+      DATABASE_URL: "postgresql://nafra:test@db:5432/iot"
       KAFKA_BROKER: kafka:9092 
+    depends_on:
+      - db
+    links:
+      - db:db
+    container_name: scala-app
     networks:
       - kafka-net  
-  
+
+  db:
+    image: postgres:16  
+    networks:
+      - kafka-net
+    restart: always
+    ports:
+      - "5435:5435"
+    environment:
+      POSTGRES_USER: nafra
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: iot
+    # add secrets for .env : .env_file  
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+
+volumes:
+  postgres_data:
+
 networks:
   kafka-net:
     driver: bridge

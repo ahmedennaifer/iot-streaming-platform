@@ -57,7 +57,6 @@ class TemperatureThermistorSensor:
 
 class TemperatureSensor(Sensor):
 
-    _BATTERY_LEVEL = 100
     _BATTERY_DECREASE_AMOUNT = 0.5
 
     def __init__(self, temperature_sensor_type):
@@ -66,6 +65,7 @@ class TemperatureSensor(Sensor):
         self.device_type = temperature_sensor_type.type
         self.unit = temperature_sensor_type.unit
         self.device_model = ""
+        self._battery_level = 100.0
         self.battery_status = BatteryLevel.FULL
         self.status = StatusType.ON
         self.location = (np.random.uniform(-90, 90), np.random.uniform(-180, 180))
@@ -74,14 +74,13 @@ class TemperatureSensor(Sensor):
         self.current_reading = self.read_data()
         self.log_file = self.log()
         self.group_id = np.random.randint(1, 30)
-        self._decrease_battery(self)
+        self._decrease_battery()
 
-    @classmethod
-    def _decrease_battery(cls, self) -> None:
-        if cls._BATTERY_LEVEL - cls._BATTERY_DECREASE_AMOUNT > 0:
-            cls._BATTERY_LEVEL -= cls._BATTERY_DECREASE_AMOUNT
-        elif cls._BATTERY_LEVEL - cls._BATTERY_DECREASE_AMOUNT <= 0:
-            cls._BATTERY_LEVEL = 0
+    def _decrease_battery(self) -> None:
+        if self._battery_level - self._BATTERY_DECREASE_AMOUNT > 0:
+            self._battery_level -= self._BATTERY_DECREASE_AMOUNT
+        elif self._battery_level - self._BATTERY_DECREASE_AMOUNT <= 0:
+            self._battery_level = 0
             self.battery_status = BatteryLevel.EMPTY
             logging.critical(
                 f"Sensor: {self.device_id} has NO battery! Charge immediately"
@@ -94,7 +93,7 @@ class TemperatureSensor(Sensor):
             f"DeviceType: {self.device_type},\n"
             f"Status: {self.status},\n"
             f"CurrentReading: {self.current_reading},\n"
-            f"BatteryLevel: {TemperatureSensor._BATTERY_LEVEL},\n"
+            f"BatteryLevel: {self._battery_level},\n"
             f"Location: {self.location},\n"
         )
     
@@ -105,9 +104,11 @@ class TemperatureSensor(Sensor):
             "DeviceType": str(self.device_type),
             "Status": str(self.status),
             "CurrentReading": float(self.current_reading),
-            "BatteryLevel": float(TemperatureSensor._BATTERY_LEVEL),
+            "BatteryLevel": float(self._battery_level),
             "Location": str(self.location),
+            "Timestamp": datetime.now().isoformat()  
         }
+
 
     def send_data(self) -> Dict[str, Any]:
         self.current_reading = np.random.uniform(1.0, 300)
