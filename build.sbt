@@ -9,7 +9,10 @@ lazy val root = (project in file("."))
       "org.apache.spark" %% "spark-sql" % "3.5.3",
       "org.apache.spark" %% "spark-streaming" % "3.5.3",
       "org.apache.spark" %% "spark-sql-kafka-0-10" % "3.5.3",
-      "org.tpolecat" %% "skunk-core" % "0.6.4"
+      "org.tpolecat" %% "skunk-core" % "0.6.4",
+      "com.typesafe.slick" %% "slick" % "3.3.3",
+      "org.postgresql" % "postgresql" % "42.2.8",
+      "com.typesafe.slick" %% "slick-hikaricp" % "3.3.3"
     ),
-    Compile / mainClass := Some("consumer.SparkConsumer")
-  )
+Compile / run / mainClass := Some("consumer.Testdb")  
+)

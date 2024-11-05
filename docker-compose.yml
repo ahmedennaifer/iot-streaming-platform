@@ -49,7 +49,7 @@ services:
       POSTGRES_USER: nafra
       POSTGRES_PASSWORD: test
       POSTGRES_DB: iot
-      DATABASE_URL: "postgresql://nafra:test@db:5432/iot"
+      DATABASE_URL: "postgresql://nafra:test@db:5435/iot"
       KAFKA_BROKER: kafka:9092 
     depends_on:
       - db
