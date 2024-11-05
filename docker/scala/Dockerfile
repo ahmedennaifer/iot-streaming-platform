@@ -17,8 +17,10 @@ RUN sbt update
 
 COPY . /app
 
-RUN sbt compile
+RUN sbt clean compile
 
 EXPOSE 4040 7077 8080
 
-CMD ["sbt", "run"]
+#CMD ["sbt", "run"]
+CMD ["sbt", "runMain consumer.Testdb"]
+
