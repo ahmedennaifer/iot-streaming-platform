@@ -5,6 +5,7 @@ import scala.concurrent.{Await, Future}
 import scala.concurrent.duration._
 import scala.util.{Failure, Success, Try}
 import scala.concurrent.ExecutionContext.Implicits.global
+import java.time.Instant
 
 case class Data(
     id: Option[Int] = None,
@@ -13,7 +14,7 @@ case class Data(
     status: String,
     currentReading: Float,
     batteryLevel: Float,
-    age: Int
+    time: Instant
 )
 
 class DataTable(tag: Tag) extends Table[Data](tag, "data") {
@@ -23,7 +24,7 @@ class DataTable(tag: Tag) extends Table[Data](tag, "data") {
   def status = column[String]("status")
   def currentReading = column[Float]("current_reading")
   def batteryLevel = column[Float]("battery_level")
-  def age = column[Int]("age")
+  def time = column[Instant]("time")
 
   def * = (
     id.?,
@@ -32,7 +33,7 @@ class DataTable(tag: Tag) extends Table[Data](tag, "data") {
     status,
     currentReading,
     batteryLevel,
-    age
+    time
   ) <> (Data.tupled, Data.unapply)
 }
 object database {

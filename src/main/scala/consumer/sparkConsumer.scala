@@ -3,6 +3,14 @@ package consumer
 import org.apache.spark.sql.{SparkSession, DataFrame}
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.functions._
+import org.apache.spark.sql.streaming.Trigger
+
+/*
+  TODO: Add grafana monitoring, eg: if temperature exceeds threshold, alert
+  TODO: add better simulation for sensors
+  TODO: alert when sensor low battery
+  TODO: sql vs nosql????
+ */
 
 object SparkConsumer {
 
@@ -22,7 +30,8 @@ object SparkConsumer {
         StructField("Status", StringType, nullable = false),
         StructField("CurrentReading", FloatType, nullable = false),
         StructField("BatteryLevel", FloatType, nullable = false),
-        StructField("Location", FloatType, nullable = false)
+        StructField("Location", FloatType, nullable = false),
+        StructField("Timestamp", TimestampType, nullable = false)
       )
     )
 
@@ -44,7 +53,7 @@ object SparkConsumer {
 
       batchDf.write
         .format("jdbc")
-        .option("url", "jdbc:postgresql://db:5435/iot")
+        .option("url", "jdbc:postgresql://db:5432/iot")
         .option("dbtable", "data")
         .option("user", "nafra")
         .option("password", "test")
@@ -55,6 +64,8 @@ object SparkConsumer {
 
     val query = parsedDf.writeStream
       .foreachBatch(writeToDatabase _)
+      .trigger(Trigger.ProcessingTime("2 seconds"))
+      // .option("checkPointLocation", ".checkpoint/"s
       .outputMode("append")
       .start()
 
