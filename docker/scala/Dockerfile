@@ -22,5 +22,5 @@ RUN sbt clean compile
 EXPOSE 4040 7077 8080
 
 #CMD ["sbt", "run"]
-CMD ["sbt", "runMain consumer.Testdb"]
+CMD ["sbt", "runMain consumer.SparkConsumer"]
 

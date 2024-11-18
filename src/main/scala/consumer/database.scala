@@ -6,24 +6,43 @@ import scala.concurrent.duration._
 import scala.util.{Failure, Success, Try}
 import scala.concurrent.ExecutionContext.Implicits.global
 
-case class User(id: Option[Int] = None, name: String, age: Int)
+case class Data(
+    id: Option[Int] = None,
+    deviceModel: String,
+    deviceType: String,
+    status: String,
+    currentReading: Float,
+    batteryLevel: Float,
+    age: Int
+)
 
-class Users(tag: Tag) extends Table[User](tag, "users") {
+class DataTable(tag: Tag) extends Table[Data](tag, "data") {
   def id = column[Int]("id", O.PrimaryKey, O.AutoInc)
-  def name = column[String]("name")
+  def deviceModel = column[String]("device_model")
+  def deviceType = column[String]("device_type")
+  def status = column[String]("status")
+  def currentReading = column[Float]("current_reading")
+  def batteryLevel = column[Float]("battery_level")
   def age = column[Int]("age")
 
-  def * = (id.?, name, age) <> (User.tupled, User.unapply)
+  def * = (
+    id.?,
+    deviceModel,
+    deviceType,
+    status,
+    currentReading,
+    batteryLevel,
+    age
+  ) <> (Data.tupled, Data.unapply)
 }
-
-object Testdb {
-  val users = TableQuery[Users]
+object database {
+  val dataTable = TableQuery[DataTable]
 
   def main(args: Array[String]): Unit = {
-    checkDatabase()
+    getDatabase()
   }
 
-  def checkDatabase(): Unit = {
+  def getDatabase(): Unit = {
     val db = Database.forURL(
       url = "jdbc:postgresql://db:5432/iot",
       user = "nafra",
@@ -31,14 +50,14 @@ object Testdb {
       driver = "org.postgresql.Driver"
     )
 
-    val setup = DBIO.seq(users.schema.createIfNotExists)
+    val setup = DBIO.seq(dataTable.schema.createIfNotExists)
     Await.result(db.run(setup), 5.seconds)
     println("Table created successfully!")
 
     val checkQuery: Future[Int] = db.run(sql"SELECT 1".as[Int].head)
     Try(Await.result(checkQuery, 2.seconds)) match {
-      case Success(_) => println("db is up")
-      case Failure(_) => println("db is not up")
+      case Success(_) => println("DB is up")
+      case Failure(_) => println("DB is not up")
     }
   }
 }
