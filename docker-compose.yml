@@ -49,7 +49,7 @@ services:
       POSTGRES_USER: nafra
       POSTGRES_PASSWORD: test
       POSTGRES_DB: iot
-      DATABASE_URL: "postgresql://nafra:test@db:5435/iot"
+      DATABASE_URL: "postgresql://nafra:test@db:5432/iot"
       KAFKA_BROKER: kafka:9092 
     depends_on:
       - db
@@ -60,22 +60,38 @@ services:
       - kafka-net  
 
   db:
-    image: postgres:16  
+    image: postgres:15 
     networks:
       - kafka-net
     restart: always
     ports:
-      - "5435:5435"
+      - "5432:5432"
     environment:
       POSTGRES_USER: nafra
       POSTGRES_PASSWORD: test
       POSTGRES_DB: iot
+
     # add secrets for .env : .env_file  
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
 
+  grafana:
+    image: grafana/grafana
+    networks:
+      - kafka-net
+    container_name: grafana
+    ports:
+      - 3000:3000
+    environment:
+      - GF_LOG_LEVEL=debug
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - grafana-conf:/etc/grafana
+
 volumes:
+  grafana-data:
+  grafana-conf:
   postgres_data:
 
 networks:

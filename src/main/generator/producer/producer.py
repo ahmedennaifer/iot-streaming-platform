@@ -2,14 +2,15 @@
 
 
 import json
-import time 
+import time
 
-from src.main.generator.sensors.temperature import ( 
+from src.main.generator.sensors.temperature import (
     TemperatureBimetallicSensor,
-      TemperatureRTDSSensor,
-      TemperatureSensor, 
+    TemperatureRTDSSensor,
+    TemperatureSensor,
     TemperatureThermistorSensor,
-      TemperatureThermocoupleSensor) 
+    TemperatureThermocoupleSensor,
+)
 
 
 from confluent_kafka import Producer
@@ -27,7 +28,7 @@ devices = [
     TemperatureSensor(TemperatureThermocoupleSensor()),
     TemperatureSensor(TemperatureBimetallicSensor()),
     TemperatureSensor(TemperatureThermistorSensor()),
-    TemperatureSensor(TemperatureRTDSSensor())
+    TemperatureSensor(TemperatureRTDSSensor()),
 ]
 
 
@@ -41,19 +42,24 @@ def delivery_callback(err, msg):
             f"Produced event to topic {msg.topic()}: key = {key} value = {value}"
         )
 
+
 while True:
     for device in devices:
-        device.current_reading = device.read_data()  
-        device._decrease_battery()  
+        device.current_reading = device.read_data()
+        device._decrease_battery()
 
         readings = device.to_dict()
-        v = json.dumps(readings).encode('utf-8')
-        
+        v = json.dumps(readings).encode("utf-8")
+
         producer.produce(
-            topic=topic, key=str(device.device_id), value=v, on_delivery=delivery_callback
+            topic=topic,
+            key=str(device.device_id),
+            value=v,
+            on_delivery=delivery_callback,
         )
 
-    producer.poll(1)
+    producer.poll(10)
     producer.flush()
-    
+
     time.sleep(1)
+
