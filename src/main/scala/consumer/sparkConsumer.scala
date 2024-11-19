@@ -6,10 +6,12 @@ import org.apache.spark.sql.functions._
 import org.apache.spark.sql.streaming.Trigger
 
 /*
+
+  TODO: High priority : Window transformations max, mean, etc.. , Metada enrichment with joins, top N devices etc..
   TODO: Add grafana monitoring, eg: if temperature exceeds threshold, alert
+  TODO: Add anomaly detection and alerting in real time
   TODO: add better simulation for sensors
   TODO: alert when sensor low battery
-  TODO: sql vs nosql????
  */
 
 object SparkConsumer {
@@ -39,7 +41,7 @@ object SparkConsumer {
     val df = spark.readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "kafka:9092")
-      .option("subscribe", "test")
+      .option("subscribe", "temperature, humidity")
       .option("includeHeaders", "true")
       .load()
 
