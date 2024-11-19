@@ -2,8 +2,9 @@ import logging
 import os
 
 import uuid
+
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timedelta
 from typing import Any, Dict, Union
 
 import numpy as np
@@ -56,13 +57,12 @@ class TemperatureThermistorSensor:
 
 
 class TemperatureSensor(Sensor):
-
     _BATTERY_DECREASE_AMOUNT = 0.5
 
     def __init__(self, temperature_sensor_type):
         super().__init__()
         self.device_id = uuid.uuid1()
-        self.device_type = temperature_sensor_type.type
+        self.device_type = temperature_sensor_type.type.value
         self.unit = temperature_sensor_type.unit
         self.device_model = ""
         self._battery_level = 100.0
@@ -96,33 +96,73 @@ class TemperatureSensor(Sensor):
             f"BatteryLevel: {self._battery_level},\n"
             f"Location: {self.location},\n"
         )
-    
+
     def to_dict(self) -> Dict[str, Any]:
         return {
-            "DeviceId": str(self.device_id) if isinstance(self.device_id, uuid.UUID) else self.device_id,
+            "DeviceId": str(self.device_id)
+            if isinstance(self.device_id, uuid.UUID)
+            else self.device_id,
             "DeviceModel": str(self.device_model),
             "DeviceType": str(self.device_type),
             "Status": str(self.status),
             "CurrentReading": float(self.current_reading),
             "BatteryLevel": float(self._battery_level),
             "Location": str(self.location),
-            "Timestamp": datetime.now().isoformat()  
+            "Timestamp": datetime.now().isoformat(),
         }
-
 
     def send_data(self) -> Dict[str, Any]:
         self.current_reading = np.random.uniform(1.0, 300)
         return {"Curent Reading": self.current_reading}
 
-    def read_data(self) -> Union[int, float]:
-        return np.random.uniform(1.0, 300)
+    def read_data(self) -> float:
+        if not hasattr(self, "timestamp"):
+            self.timestamp = datetime.now()
+            self.time_step = timedelta(minutes=5)
+            self.base_temperature = np.random.uniform(15.0, 25.0)
+            self.noise_level = 0.5
+            self.anomaly_chance = 0.01
+
+        self.timestamp += self.time_step
+
+        hour_of_day = self.timestamp.hour + self.timestamp.minute / 60.0
+        day_of_year = self.timestamp.timetuple().tm_yday
+
+        daily_variation = 10 * np.sin(
+            2 * np.pi * (hour_of_day - 6) / 24
+        )  # On simule les variations avec une fonctions sinusoidale, qui peak a 12h
+
+        seasonal_variation = 5 * np.sin(
+            2 * np.pi * (day_of_year - 172) / 365
+        )  # Pas sur que c'est très utile, mais variation qui peak en Juin
+
+        noise = np.random.normal(0, self.noise_level)  # bruit
+
+        if np.random.rand() < self.anomaly_chance:
+            anomaly = np.random.uniform(-15, 15)  # Simulation d'anomalies
+            logging.warning(
+                f"Anomaly detected in sensor {self.device_id}: {anomaly:.2f}° change"
+            )
+        else:
+            anomaly = 0
+
+        temperature = (
+            self.base_temperature
+            + daily_variation
+            + seasonal_variation
+            + noise
+            + anomaly
+        )
+
+        temperature = max(-50, min(temperature, 60))
+
+        return temperature
 
     def get_status(self) -> StatusType:
         return StatusType.ON
 
     def reset(self) -> bool:
         return True
-    
 
     def log(self) -> str:
         log_directory = "./logs"
@@ -148,9 +188,3 @@ class TemperatureSensor(Sensor):
         logger.addHandler(file_handler)
 
         return log_file_path
-    
-  
-            
-            
-
-

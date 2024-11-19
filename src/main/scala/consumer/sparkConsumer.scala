@@ -27,6 +27,7 @@ object SparkConsumer {
       Array(
         StructField("DeviceId", StringType, nullable = false),
         StructField("DeviceModel", StringType, nullable = true),
+        StructField("DeviceType", StringType, nullable = false),
         StructField("Status", StringType, nullable = false),
         StructField("CurrentReading", FloatType, nullable = false),
         StructField("BatteryLevel", FloatType, nullable = false),
