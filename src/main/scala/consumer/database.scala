@@ -14,7 +14,7 @@ case class Data(
     status: String,
     currentReading: Float,
     batteryLevel: Float,
-    time: Instant
+    time: Long
 )
 
 class DataTable(tag: Tag) extends Table[Data](tag, "data") {
@@ -24,7 +24,7 @@ class DataTable(tag: Tag) extends Table[Data](tag, "data") {
   def status = column[String]("status")
   def currentReading = column[Float]("current_reading")
   def batteryLevel = column[Float]("battery_level")
-  def time = column[Instant]("time")
+  def time = column[Long]("time")
 
   def * = (
     id.?,
