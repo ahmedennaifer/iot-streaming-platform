@@ -7,4 +7,4 @@
   -  Research : Azure Container Registry, Azure data lake for logs, appsight, blob storage, checker for logs, workbook.
     
 
-![Platform Architecture](images/Diagram.png)
+![Platform Architecture](images/Architecture.png)
