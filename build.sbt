@@ -12,7 +12,12 @@ lazy val root = (project in file("."))
       "org.tpolecat" %% "skunk-core" % "0.6.4",
       "com.typesafe.slick" %% "slick" % "3.3.3",
       "org.postgresql" % "postgresql" % "42.2.8",
-      "com.typesafe.slick" %% "slick-hikaricp" % "3.3.3"
+      "com.typesafe.slick" %% "slick-hikaricp" % "3.3.3",
+      "org.scalatest" %% "scalatest" % "3.2.15" % Test,
+      "io.github.cdimascio" % "dotenv-java" % "3.0.0"
+
+
+
     ),
 Compile / run / mainClass := Some("consumer.Testdb")  
 )

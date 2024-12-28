@@ -1,0 +1,1102 @@
+2024.12.27 19:06:35 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@1305f2a1]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@35815c3a]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@1305f2a1]
+2024.12.27 19:06:35 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.27 19:06:35 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.27 19:06:36 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.27 19:11:00 INFO  Shutting down server[0m
+2024.12.27 19:11:00 INFO  shutting down Metals[0m
+2024.12.27 19:11:00 INFO  Exiting server[0m
+2024.12.27 19:11:06 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@36dd08df]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@2484504b]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@36dd08df]
+2024.12.27 19:11:06 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.27 19:11:06 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.27 19:11:07 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.27 19:11:11 INFO  Shutting down server[0m
+2024.12.27 19:11:11 INFO  shutting down Metals[0m
+2024.12.27 19:11:11 INFO  Exiting server[0m
+2024.12.27 19:13:08 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@58b3585b]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@457afb76]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@58b3585b]
+2024.12.27 19:13:08 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.27 19:13:08 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.27 19:13:09 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.27 19:13:18 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:13:18 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:13:20 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:13:20 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:13:20 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:17:36 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:17:36 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:17:36 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:20:05 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:20:05 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:24:50 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:24:50 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:24:52 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:24:52 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:24:52 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:25:38 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:27:19 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:27:19 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:27:21 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:27:22 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:27:22 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:27:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:27:24 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.27 19:27:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:28:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:28:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:28:30 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:28:30 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.27 19:28:30 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:28:44 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:28:46 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:31:30 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:31:30 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:31:31 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:31:31 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.27 19:31:31 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:31:35 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.27 19:33:17 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.27 19:33:18 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.27 19:33:19 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.27 19:36:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:36:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:36:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:36:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:36:26 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:36:26 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:36:27 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:38:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:38:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:38:15 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:38:15 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:38 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:39 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:39 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:44 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:44 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:44 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:44 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:45 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:45 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:47 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:47 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:39:47 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:39:49 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:42:15 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:19 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:20 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:42:20 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:42:22 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:45:42 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:45:42 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:45:48 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:45:48 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:45:48 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:45:48 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:45:49 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:48:04 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:48:04 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:48:06 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:48:06 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:48:06 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:50:08 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:50:08 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:50:09 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:50:09 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:51:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:51:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:51:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:51:28 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:51:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.27 19:51:29 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.27 19:51:55 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:01:08 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@16c9d8cf]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@1c3d8a9e]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@16c9d8cf]
+2024.12.28 09:01:08 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:01:08 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:01:09 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:07:45 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:07:45 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:07:47 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:07:47 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.28 09:07:47 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:07:53 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.28 09:07:56 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:08:15 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:08:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:08:17 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:08:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:09:29 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:09:29 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:09:29 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:09:29 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:09:30 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:09:32 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:09:32 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:11:09 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:11:09 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:11:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:11:10 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:11:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:11:11 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:14:13 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:14:13 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:14:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:14:14 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.28 09:14:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:14:14 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.28 09:14:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:14:22 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:14:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:14:23 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:14:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:14:24 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:18:56 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:18:58 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:18:59 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:19:01 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:19:03 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:19:04 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:19:06 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:19:07 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:19:07 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:19:09 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:19:09 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:19:12 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:19:12 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:20:12 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:20:12 INFO  Shutting down server[0m
+2024.12.28 09:20:12 INFO  shutting down Metals[0m
+2024.12.28 09:20:12 INFO  Exiting server[0m
+2024.12.28 09:21:04 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@c46b72d]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@2f74a83f]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@c46b72d]
+2024.12.28 09:21:04 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+Dec 28, 2024 9:21:05 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala",
+      "languageId": "scala",
+      "version": 0,
+      "text": "\n"
+    }
+  }
+}
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.didOpen(org.eclipse.lsp4j.DidOpenTextDocumentParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.nio.file.NoSuchFileException: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.metals.MetalsLspService.didOpen(MetalsLspService.scala:758)
+	at scala.meta.internal.metals.WorkspaceLspService.didOpen(WorkspaceLspService.scala:401)
+	at scala.meta.metals.lsp.DelegatingScalaService.didOpen(DelegatingScalaService.scala:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+2024.12.28 09:21:04 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:21:05 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:21:09 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:21:12 INFO  Shutting down server[0m
+2024.12.28 09:21:12 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala[0m
+2024.12.28 09:21:12 INFO  shutting down Metals[0m
+2024.12.28 09:21:12 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:21:12 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:21:12 INFO  Exiting server[0m
+2024.12.28 09:21:24 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@268614c0]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@5a49f78c]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@268614c0]
+2024.12.28 09:21:28 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+Dec 28, 2024 9:21:28 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala",
+      "languageId": "scala",
+      "version": 0,
+      "text": "\n"
+    }
+  }
+}
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.didOpen(org.eclipse.lsp4j.DidOpenTextDocumentParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.nio.file.NoSuchFileException: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.metals.MetalsLspService.didOpen(MetalsLspService.scala:758)
+	at scala.meta.internal.metals.WorkspaceLspService.didOpen(WorkspaceLspService.scala:401)
+	at scala.meta.metals.lsp.DelegatingScalaService.didOpen(DelegatingScalaService.scala:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+2024.12.28 09:21:28 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:21:28 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:21:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:21:30 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala[0m
+2024.12.28 09:21:30 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:21:35 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala[0m
+2024.12.28 09:21:35 INFO  Shutting down server[0m
+2024.12.28 09:21:35 INFO  shutting down Metals[0m
+2024.12.28 09:23:23 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@7e63adce]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@3ad8c0da]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@7e63adce]
+2024.12.28 09:23:23 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+Dec 28, 2024 9:23:23 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/writers/DatabaseWriter.scala",
+      "languageId": "scala",
+      "version": 0,
+      "text": "\n"
+    }
+  }
+}
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.didOpen(org.eclipse.lsp4j.DidOpenTextDocumentParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.nio.file.NoSuchFileException: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/writers/DatabaseWriter.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.metals.MetalsLspService.didOpen(MetalsLspService.scala:758)
+	at scala.meta.internal.metals.WorkspaceLspService.didOpen(WorkspaceLspService.scala:401)
+	at scala.meta.metals.lsp.DelegatingScalaService.didOpen(DelegatingScalaService.scala:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+2024.12.28 09:23:23 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:23:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/writers/DatabaseWriter.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:23:31 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/writers/DatabaseWriter.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:23:31 INFO  Shutting down server[0m
+2024.12.28 09:23:31 INFO  shutting down Metals[0m
+2024.12.28 09:23:31 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/writers/DatabaseWriter.scala[0m
+2024.12.28 09:23:31 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/writers/DatabaseWriter.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:23:31 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:23:31 INFO  Exiting server[0m
+2024.12.28 09:23:42 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@62acca77]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@209f27f9]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@62acca77]
+2024.12.28 09:23:46 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:23:46 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:23:46 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:23:46 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:23:46 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:23:47 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:23:46 INFO  Shutting down server[0m
+2024.12.28 09:23:46 INFO  shutting down Metals[0m
+2024.12.28 09:23:47 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:23:47 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:23:47 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:25:20 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@296d9314]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@47e6db34]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@296d9314]
+2024.12.28 09:25:24 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:25:24 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:25:24 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:25:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:25:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:25:31 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:25:31 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala[0m
+2024.12.28 09:25:31 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/processors/MetricsProcessor.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:25:38 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:25:38 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:25:40 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:25:40 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:25:40 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:25:41 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:26:47 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:26:47 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:26:50 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:26:50 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:26:50 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:28:20 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:28:20 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:28:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:28:27 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:28:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:05 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:10 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:12 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:14 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:17 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:18 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:18 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:18 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:18 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:18 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:18 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:18 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:18 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:31 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:31 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:35 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:38 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:40 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:41 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala[0m
+2024.12.28 09:31:41 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/sparkConsumer.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:47 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:51 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:31:59 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:32:01 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:32:02 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:32:05 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala[0m
+2024.12.28 09:32:05 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/database.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:32:16 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala[0m
+2024.12.28 09:32:16 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:32:16 INFO  Shutting down server[0m
+2024.12.28 09:32:16 INFO  shutting down Metals[0m
+2024.12.28 09:32:16 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:32:16 INFO  Exiting server[0m
+2024.12.28 09:32:21 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@122a4978]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@282c72d1]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@122a4978]
+2024.12.28 09:32:25 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:32:25 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:32:25 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:24 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:26 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:27 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:36 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:33:36 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala[0m
+2024.12.28 09:33:36 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:35:21 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:35:21 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:35:21 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:35:21 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:35:21 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:35:25 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:35:28 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt[0m
+2024.12.28 09:35:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:35:28 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:35:30 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:35:32 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt[0m
+2024.12.28 09:35:41 INFO  Shutting down server[0m
+2024.12.28 09:35:41 INFO  shutting down Metals[0m
+2024.12.28 09:36:35 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@58666a73]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@3caa66e7]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@58666a73]
+2024.12.28 09:36:35 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:36:35 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:36:35 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:37:53 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:53 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:53 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:53 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:53 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:53 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:53 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:53 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:57 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:58 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:58 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:37:59 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt[0m
+2024.12.28 09:37:59 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:38:02 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/build.sbt[0m
+2024.12.28 09:39:32 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:32 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:32 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:32 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:32 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:32 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:32 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:32 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:32 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:33 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:33 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:36 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:36 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:36 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:36 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:37 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:39 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:41 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:43 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:43 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:44 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala[0m
+2024.12.28 09:39:44 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:59 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:59 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:59 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:39:59 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:40:01 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:40:01 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:40:02 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala[0m
+2024.12.28 09:40:02 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/SparkConfig.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:40:32 INFO  Shutting down server[0m
+2024.12.28 09:40:32 INFO  shutting down Metals[0m
+2024.12.28 09:40:32 INFO  Exiting server[0m
+2024.12.28 09:41:19 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@b04136e]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@460cd95f]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@b04136e]
+2024.12.28 09:41:19 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:41:19 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:41:20 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:42:07 INFO  Shutting down server[0m
+2024.12.28 09:42:07 INFO  shutting down Metals[0m
+2024.12.28 09:42:07 INFO  Exiting server[0m
+2024.12.28 09:42:16 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@6903c7c9]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@54b29f52]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@6903c7c9]
+2024.12.28 09:42:16 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+Dec 28, 2024 9:42:16 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "textDocument/didOpen",
+  "params": {
+    "textDocument": {
+      "uri": "file:///Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/config.scala",
+      "languageId": "scala",
+      "version": 0,
+      "text": "\n"
+    }
+  }
+}
+java.lang.IllegalStateException: An unexpected exception occurred while executing jsonrpc method public abstract java.util.concurrent.CompletableFuture scala.meta.metals.lsp.TextDocumentService.didOpen(org.eclipse.lsp4j.DidOpenTextDocumentParams)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:73)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.nio.file.NoSuchFileException: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/config.scala
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:219)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:371)
+	at java.base/java.nio.file.Files.newByteChannel(Files.java:422)
+	at java.base/java.nio.file.Files.readAllBytes(Files.java:3206)
+	at scala.meta.internal.io.PlatformFileIO$.slurp(PlatformFileIO.scala:42)
+	at scala.meta.internal.io.FileIO$.slurp(FileIO.scala:18)
+	at scala.meta.internal.metals.MetalsLspService.didOpen(MetalsLspService.scala:758)
+	at scala.meta.internal.metals.WorkspaceLspService.didOpen(WorkspaceLspService.scala:401)
+	at scala.meta.metals.lsp.DelegatingScalaService.didOpen(DelegatingScalaService.scala:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	... 11 more
+
+2024.12.28 09:42:16 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:42:19 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/config.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:42:23 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/config.scala[0m
+2024.12.28 09:42:23 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/config.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:44:16 INFO  Shutting down server[0m
+2024.12.28 09:44:16 INFO  shutting down Metals[0m
+2024.12.28 09:47:59 INFO  Started: Metals version 1.3.5 in folders '/Users/data1/Desktop/work/kraya/iot-streaming-platform' for client helix 24.7 (079f5442).[0m
+SLF4J(W): Class path contains multiple SLF4J providers.
+SLF4J(W): Found provider [scribe.slf4j.ScribeServiceProvider@b7935fd]
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@7f81299e]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J(I): Actual provider is of type [scribe.slf4j.ScribeServiceProvider@b7935fd]
+2024.12.28 09:47:59 WARN  Flyway upgrade recommended: H2 2.3.230 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.[0m
+2024.12.28 09:47:59 WARN  Error while refreshing inlayHints: null
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: workspace/inlayHint/refresh
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:48:00 ERROR Unexpected error initializing server: 
+org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Method not found: window/showMessageRequest
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:204)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.lang.Thread.run(Thread.java:829)
+[0m
+2024.12.28 09:48:01 WARN  no build target for: /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/config.scala[0m
+2024.12.28 09:48:01 INFO  no build target found for /Users/data1/Desktop/work/kraya/iot-streaming-platform/src/main/scala/consumer/config/config.scala. Using presentation compiler with project's scala-library version: 3.3.3[0m
+2024.12.28 09:49:16 INFO  Shutting down server[0m
+2024.12.28 09:49:16 INFO  shutting down Metals[0m
+2024.12.28 09:49:16 INFO  Exiting server[0m
