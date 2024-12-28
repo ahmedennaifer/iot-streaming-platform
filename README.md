@@ -8,3 +8,4 @@
     
 
 ![Platform Architecture](images/Architecture.png)
+![Grafana Dashboard](images/dashboard)

@@ -18,7 +18,7 @@ RUN sbt update
 COPY . /app
 
 RUN sbt clean compile
-
+RUN sbt test
 EXPOSE 4040 7077 8080
 
 #CMD ["sbt", "run"]
