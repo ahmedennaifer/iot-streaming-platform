@@ -1,11 +1,14 @@
-
 package consumer.writers
 
 import org.apache.spark.sql.DataFrame
 import consumer.config.SparkConfig.DatabaseConfig._
 
 object DatabaseWriter {
-  def writeToDatabase(df: DataFrame, tableName: String, mode: String = "append"): Unit = {
+  def writeToDatabase(
+      df: DataFrame,
+      tableName: String,
+      mode: String = "append"
+  ): Unit = {
     df.write
       .format("jdbc")
       .option("url", url)

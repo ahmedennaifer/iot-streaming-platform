@@ -14,7 +14,10 @@ object SparkConsumer {
 
     val df = spark.readStream
       .format("kafka")
-      .option("kafka.bootstrap.servers", SparkConfig.KafkaConfig.bootstrapServers)
+      .option(
+        "kafka.bootstrap.servers",
+        SparkConfig.KafkaConfig.bootstrapServers
+      )
       .option("subscribe", SparkConfig.KafkaConfig.topics)
       .option("includeHeaders", "true")
       .load()
@@ -30,16 +33,14 @@ object SparkConsumer {
 
     val queries = Seq(
       parsedDf.writeStream
-        .foreachBatch { (batchDf: Dataset[Row], _: Long) => 
+        .foreachBatch { (batchDf: Dataset[Row], _: Long) =>
           DatabaseWriter.writeToDatabase(batchDf, "data")
         }
         .trigger(Trigger.ProcessingTime("2 seconds"))
         .outputMode("append")
         .start(),
-
-      // windowed_metrics
       windowedMetrics.writeStream
-        .foreachBatch { (batchDf: Dataset[Row], _: Long) => 
+        .foreachBatch { (batchDf: Dataset[Row], _: Long) =>
           DatabaseWriter.writeToDatabase(
             prepareWindowedMetrics(batchDf),
             "windowed_metrics"
@@ -48,10 +49,8 @@ object SparkConsumer {
         .trigger(Trigger.ProcessingTime("1 minute"))
         .outputMode("update")
         .start(),
-
-      // device_health
       deviceHealth.writeStream
-        .foreachBatch { (batchDf: Dataset[Row], _: Long) => 
+        .foreachBatch { (batchDf: Dataset[Row], _: Long) =>
           DatabaseWriter.writeToDatabase(
             prepareDeviceHealth(batchDf),
             "device_health"
@@ -60,10 +59,8 @@ object SparkConsumer {
         .trigger(Trigger.ProcessingTime("1 minute"))
         .outputMode("update")
         .start(),
-
-      // Alerts
       alertMetrics.writeStream
-        .foreachBatch { (batchDf: Dataset[Row], _: Long) => 
+        .foreachBatch { (batchDf: Dataset[Row], _: Long) =>
           DatabaseWriter.writeToDatabase(
             prepareAlertMetrics(batchDf),
             "alert_metrics"

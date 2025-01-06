@@ -70,7 +70,8 @@ class DataTable(tag: Tag) extends Table[Data](tag, "data") {
   ) <> (Data.tupled, Data.unapply)
 }
 
-class WindowedMetricsTable(tag: Tag) extends Table[WindowedMetrics](tag, "windowed_metrics") {
+class WindowedMetricsTable(tag: Tag)
+    extends Table[WindowedMetrics](tag, "windowed_metrics") {
   def window_start = column[Timestamp]("window_start")
   def window_end = column[Timestamp]("window_end")
   def DeviceType = column[String]("DeviceType")
@@ -96,7 +97,8 @@ class WindowedMetricsTable(tag: Tag) extends Table[WindowedMetrics](tag, "window
   def idx = index("idx_windowed_metrics_time", (window_start, window_end))
 }
 
-class DeviceHealthTable(tag: Tag) extends Table[DeviceHealth](tag, "device_health") {
+class DeviceHealthTable(tag: Tag)
+    extends Table[DeviceHealth](tag, "device_health") {
   def window_start = column[Timestamp]("window_start")
   def window_end = column[Timestamp]("window_end")
   def DeviceType = column[String]("DeviceType")
@@ -116,7 +118,8 @@ class DeviceHealthTable(tag: Tag) extends Table[DeviceHealth](tag, "device_healt
   def idx = index("idx_device_health_time", (window_start, window_end))
 }
 
-class AlertMetricsTable(tag: Tag) extends Table[AlertMetrics](tag, "alert_metrics") {
+class AlertMetricsTable(tag: Tag)
+    extends Table[AlertMetrics](tag, "alert_metrics") {
   def window_start = column[Timestamp]("window_start")
   def window_end = column[Timestamp]("window_end")
   def DeviceType = column[String]("DeviceType")
